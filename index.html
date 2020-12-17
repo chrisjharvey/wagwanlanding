@@ -64,7 +64,7 @@
 
     <div id="intro-1" class="py-5">
       <div class="img">
-        <img data-aos="fade-right" src="./img/intro1.jpg" alt="" width="800px"
+        <img data-aos="fade-right" src="./img/intro1.jpg" alt="" width="650px"
           class="p-4 img-fluid">
       </div>
 
@@ -119,41 +119,67 @@
 
     <section id="inspiration" class="py-5 text-center">
       <h2 class="py-4">Inspiration</h2>
-      <p class="lead py-4">If you’re looking for some inspiration, have a look at these films:
+      <p class="lead title py-4">If you’re looking for some inspiration, have a look at these films:
       </p>
       <div class="container">
         <div class="row">
             <div class="col-lg-4">
-              <div data-aos="fade-right"  class="box-grid  my-2">
-
+              <a target="_blank" href="https://www.youtube.com/watch?v=aR_CMTneqtA&ab_channel=Skoll.org">
+              <div data-aos="fade-right" class="card my-2">
+                  <img src="./img/georgethepoet.jpg" alt="" class="img-fluid">
+                  <div class="card-hover">
+                    <i class="fa fa-play fa-2x"></i>
+                  </div>
               </div>
+            </a>
+              <p>George The Poet - Coronavirus </p>
             </div>
             <div class="col-lg-4">
-              <div data-aos="fade-right"  class="box-grid my-2">
-
+              <a target="_blank" href="https://www.youtube.com/watch?v=tot9LAFqJZg&ab_channel=WallOfEntertainment">
+              <div data-aos="fade-right" class="card my-2">
+                <img src="./img/mandemonthewall.jpg" alt="" width="100%" height="195px">
+                <div class="card-hover"><i class="fa fa-play fa-2x"></i></div>
               </div>
+            </a>
+              <p>Mandem On The Wall - Wall of Comedy</p>
             </div>
             <div class="col-lg-4">
-              <div data-aos="fade-right"  class="box-grid my-2">
-
+              <a target="_blank" href="https://www.youtube.com/watch?v=KQwPyhcidUE&ab_channel=NovelPictures">
+              <div data-aos="fade-right" class="card my-2">
+                <img src="./img/whoami.jpg" alt="" class="img-fluid">
+                <div class="card-hover"><i class="fa fa-play fa-2x"></i></div>
               </div>
+             </a>
+              <p>Novel Pictures - Who Am I?</p>
             </div>
         </div>
         <div class="row">
           <div class="col-lg-4">
-            <div data-aos="fade-right"  class="box-grid my-2">
-
+            <a target="_blank" href="https://www.youtube.com/watch?v=nYNmS305_VQ&ab_channel=Nines">
+            <div data-aos="fade-right" class="card my-2">
+              <img src="./img/crabsinabucket.jpg" alt="" class="img-fluid">
+              <div class="card-hover"><i class="fa fa-play fa-2x"></i></div>
             </div>
+          </a>
+            <p>Nines - Crabs in a bucket</p>
           </div>
           <div class="col-lg-4">
-            <div data-aos="fade-right"  class="box-grid my-2">
-
+            <a target="_blank" href="https://www.youtube.com/watch?v=O1EuOUnjUwE&ab_channel=KeoneandMari">
+            <div data-aos="fade-right"  class="card my-2">
+              <img src="./img/onthemove.jpg" alt="" class="img-fluid">
+              <div class="card-hover"><i class="fa fa-play fa-2x"></i></div>
             </div>
+          </a>
+            <p>On The Move - Keone & Mari</p>
           </div>
           <div class="col-lg-4">
-            <div data-aos="fade-right"  class="box-grid my-2">
-
+            <a target="_blank" href="https://www.youtube.com/watch?v=P6qJ2326uhY&ab_channel=ShaneP.Liao">
+            <div data-aos="fade-right"  class="card my-2">
+              <img src="/img/alone.jpg" alt="" class="img-fluid">
+              <div class="card-hover"><i class="fa fa-play fa-2x"></i></div>
             </div>
+          </a>
+            <p>Riot Films - Home Alone</p>
           </div>
       </div>
         
@@ -201,15 +227,61 @@
     </section>
 
     <section id="contact" class="my-5">
-      
-      <form data-aos="fade-right" action="POST" id="form">
-        <h3 class="text-center">Get In Touch</h3>
-        <!-- <hr class="my-3"> -->
-        <input type="text" placeholder="Name" id="name">
-        <input type="email" placeholder="Email" id="email">
-        <input type="text" placeholder="Subject" id="subject">
-        <textarea name="message" id="message" placeholder="Message"></textarea>
-        <input type="Submit" class="button" name="btn">
+      <div class="form-wrapper" data-aos="fade-right">
+        <form class="needs-validation" netlify novalidate>
+          <div class="form-header">
+
+            <h3 class="text-center py-3">Get In Touch</h3>
+            <hr>
+
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              name="name"
+              placeholder="Name"
+              class="form-control"
+              required
+              />
+            <div class="invalid-feedback">Please enter a valid name</div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              class="form-control"
+              required
+              />
+            <div class="invalid-feedback">Please enter a valid email address.</div>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              class="form-control"
+              required
+              />
+            <div class="invalid-feedback">Please enter a valid subject</div>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              type="text"
+              name="message"
+              placeholder="Message"
+              class="form-control"
+              required></textarea>
+            <div class="invalid-feedback">Please enter a valid message</div>
+          </div>
+          <div>
+
+            <button type="submit" class="button">Submit <i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
       </form>
 
       <div data-aos="fade-left"  class="contact-text my-4 m-4">
@@ -246,13 +318,13 @@
 					<ul class="social-list">
 						
 						<li>
-							<a target="_blank" href="https://github.com/chrisjharvey">
+							<a target="_blank" href="https://www.instagram.com/apemedialtd/">
 								<i class="fab fa-instagram"></i>
 							</a>
 						</li>
 						
 						<li>
-							<a target="_blank" href="">
+							<a target="_blank" href="https://twitter.com/ape_media?lang=en">
 								<i class="fab fa-twitter"></i>
 							</a>
 						</li>
@@ -275,6 +347,7 @@
   </script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/main.js"></script>
+    <script src="./js/validation.js"></script>
   </body>
 
 </html>

@@ -58,6 +58,6 @@ const x = setInterval(function() {
  AOS.init({
      duration: 1000,
      easing: 'ease-in',
-    //  once: true,
+     once: true,
      mirror: false,
  });
