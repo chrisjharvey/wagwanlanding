@@ -12,7 +12,7 @@ body {
   background: $primary;
   font-family: $font;
   color: $text-color;
-  
+  overflow-x: hidden;
 }
 
 h1,h2,h3 {
@@ -48,11 +48,30 @@ h1,h2,h3 {
     margin: 0px 30px;
 
   }
+
+  .arrow-btn {
+    position: absolute;
+    top: 90vh;
+    left:  50vw;
+  }
+  
+  .arrow-btn i {
+    font-size: 3rem;
+    color: $text-color;
+  }
+  
+  .arrow-btn i:hover {
+    color: rgba(255,255,255,0.8);
+  }
+  
+  .arrow {
+    animation: bounce 3s infinite;
+  }
 }
 
-#jumbo {
+#intro, #jumbo {
   text-align: center;
-  .jumbo-text {
+  .intro-text, .jumbo-text {
     padding: 100px 0;
   }
 }
@@ -64,7 +83,7 @@ h1,h2,h3 {
   justify-content: space-evenly;
   width: 100%;
   background: $secondary;
-  .intro-text p{
+  .intro1-text p{
     font-size: 1.8rem;
     line-height: 2;
     
@@ -78,7 +97,7 @@ h1,h2,h3 {
   justify-content: space-evenly;
   width: 100%;
 
-  .intro-text p{
+  .intro2-text p{
     font-size: 1.8rem;
     line-height: 2;
     max-width: 600px;
@@ -219,19 +238,10 @@ h1,h2,h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
-  #form {
-    display: flex;
-    flex-direction: column;
-    background: $secondary;
-    
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.4);
-  }
+  
   .form-wrapper {
-    width: 500px;
+    width: 450px;
     border-radius: 10px;
-    margin: auto;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
     padding: 20px;
     background: $secondary;
@@ -290,12 +300,16 @@ footer {
     font-family: $font-heading;
     font-size: 1rem;
   }
+  .footer-nav li a:hover {
+    color:  rgba(255,255,255,0.9);
+    
+  }
 
   hr {
     width: 80%;
     margin: auto;
     height: 0.01px;
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.2);
   }
 
   .social-list {

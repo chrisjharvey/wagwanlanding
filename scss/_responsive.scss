@@ -4,13 +4,14 @@
     height: 70px;
   }
   #hero {
+    background: url(../img/hero-img.jpg) no-repeat right center/cover;
     .hero-text h1 {
       font-size: 2.5rem;
     }
   }
 
-  #jumbo {
-    .jumbo-text h3 {
+  #intro {
+    .intro-text h3 {
       font-size: 1.2rem;
       line-height: 2;
     }
@@ -18,7 +19,7 @@
 
   #intro-1 {
     justify-content: left;
-    .intro-text p {
+    .intro1-text p {
       font-size: 1.2rem;
       line-height: 1.4;
       padding: 0 25px;
@@ -27,7 +28,7 @@
 
   #intro-2 {
     flex-direction: column-reverse;
-    .intro-text p {
+    .intro2-text p {
       font-size: 1.2rem;
       line-height: 1.4;
       padding: 0 25px;
@@ -62,6 +63,7 @@
   }
 
   #deadline {
+    background: url(../img/deadline.jpg) no-repeat center center/cover;
     .deadline-content h2 {
       font-size: 1.4rem;
       text-align: center;
@@ -73,10 +75,24 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 768px) {
+    #deadline {
+        .deadline-content h2 {
+          font-size: 2rem;
+          text-align: center;
+        }
+        .deadline-content h1 {
+          font-size: 4rem;
+          text-align: center;
+        }
+      }
+    }
+
+
+@media screen and (max-width: 1024px) {
   #intro-1 {
-    justify-content: left;
-    .intro-text p {
+    justify-content: center;
+    .intro1-text p {
       font-size: 1.2rem;
       line-height: 1.4;
       padding: 0 25px;
@@ -85,7 +101,7 @@
 
   #intro-2 {
     flex-direction: column-reverse;
-    .intro-text p {
+    .intro2-text p {
       font-size: 1.2rem;
       line-height: 1.4;
       padding: 0 25px;
@@ -105,7 +121,11 @@
       text-align: left;
     }
   }
+
+  .contact-text  {
+    text-align: center;
+  }
+
 }
 
-@media screen and (min-width: 768px) {
-}
+
