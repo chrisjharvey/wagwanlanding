@@ -1,22 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
+  background: $primary;
+  font-family: $font;
   color: $text-color;
+  
+}
+
+h1,h2,h3 {
+  font-family: $font-heading;
 }
 
 #hero {
   position: relative;
-  margin-top: 120px;
+  margin-top: 0px;
   color: $text-color;
   background: url(../img/hero-img.jpg) no-repeat right center/cover fixed;
   height: 100vh;
-  
-
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: rgba(0,0,0,0.4);
-  }
 
   .hero-text {
     display: flex;
@@ -56,8 +64,9 @@ body {
   width: 100%;
   background: $secondary;
   .intro-text p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 2;
+    
   }
 }
 
@@ -69,7 +78,7 @@ body {
   width: 100%;
 
   .intro-text p{
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     line-height: 2;
     max-width: 600px;
   }
@@ -80,11 +89,17 @@ body {
   display: flex;
   .film-desc-img,.film-desc-content{
     width: 50%;
-    height: 800px;
+    
   }
-  .film-desc-img{
+
+  // .film-desc-content {
+  //   max-height: 900px;
+  // }
+
+  .film-desc-img {
     width: 50%;
-    background: url(../img/film-desc.jpg) no-repeat left center/cover;
+    height: 900px;
+    background: url(../img/film-desc.jpg) no-repeat center center/cover;
     
   }
   .film-desc-content {
@@ -132,6 +147,7 @@ body {
 
   .deadline-content {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 50vh;
@@ -179,6 +195,8 @@ body {
     padding: 10px;
     margin: 15px 0;
     border-radius: 10px;
+    outline: none;
+    border:none;
   }
   hr {
     background: $text-color;
@@ -189,16 +207,18 @@ body {
   textarea {
     height: 150px;
     border-radius: 10px;
+    outline: none;
+    border: none;
   }
 
   .contact-text p {
-    max-width: 500px;
+    font-size: 1.4rem;
   }
 
   .button {
     border: none;
     outline: none;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.6);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.9);
     align-items: right;
   }
 }
@@ -260,8 +280,8 @@ footer {
   }
   
   .social-list li a:hover {
-    background-color: #11c149;
-    color: #fff;
+    background-color: rgba(255,255,255,0.9);
+    color: #333;
   }
 
 }

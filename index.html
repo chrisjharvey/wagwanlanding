@@ -9,16 +9,22 @@
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       />
+      <!-- Animate CSS -->
+      <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Wha'gwan Film Festival</title>
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-dark py-4">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
 
 
         <a class="navbar-brand" href="#">
-          <img src="./img/wagwanlogo.png" width="60px" height="60px" alt="">
+          <img src="./img/wagwanlogo.png" width="80px" height="90px" alt="">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
           data-target="#navbarNav"
@@ -44,25 +50,25 @@
 
     <section id="hero">
       <div class="hero-text">
-        <h1 class="display-4">Wha'gwan Film Festival</h1>
-        <p class="lead">Spring 2021</p>
+        <h1  class="display-4 animate__animated animate__slideInLeft">Wha'gwan Film Festival</h1>
+        <p class="lead animate__animated animate__slideInLeft">Spring 2021</p>
       </div>
     </section>
 
     <section id="jumbo" class="my-5">
       <div class="jumbo-text">
-        <h3 class="pb-5">The WHA’GWAN FILM FESTIVAL is happening in Spring 2021</h3>
-        <h3>And we’re looking for YOUR films to feature.</h3>
+        <h3 data-aos="fade-right" class="pb-5" >The WHA’GWAN FILM FESTIVAL is happening in Spring 2021</h3>
+        <h3 data-aos="fade-right">And we’re looking for YOUR films to feature.</h3>
       </div>
     </section>
 
     <div id="intro-1" class="py-5">
       <div class="img">
-        <img src="./img/intro1.jpg" alt="" width="800px" height="600px"
-          class="py-4 img-fluid">
+        <img data-aos="fade-right" src="./img/intro1.jpg" alt="" width="800px"
+          class="p-4 img-fluid">
       </div>
 
-      <div class="intro-text">
+      <div data-aos="fade-left"class="intro-text">
         <p>Are you aged 14-21, and live in London?</p>
         <p>Can you show us WHA’GWAN in your life on film?</p>
         <p>Then we want YOU and YOUR FILMS!</p>
@@ -70,7 +76,7 @@
     </div>
 
     <div id="intro-2" class="py-5">
-      <div class="intro-text">
+      <div data-aos="fade-right" class="intro-text">
         <p>Films can be anything from 30 seconds up to 30 minutes long, and the
           subject is YOU and YOUR LIFE.</p>
         <p>Literally, TELL US WHA’GWAN!</p>
@@ -78,7 +84,7 @@
       </div>
 
       <div class="img">
-        <img src="./img/intro2.jpg" alt="" width="600px" height="600px"
+        <img data-aos="fade-left" data-aos-delay="600" data-aos-duration="2000" src="./img/intro2.jpg" alt="" width="600px" height="600px"
           class="img-fluid">
       </div>
     </div>
@@ -88,7 +94,7 @@
 
       </div>
       <div class="film-desc-content">
-        <h2 class="py-4">The films should tell a story or give a glimpse into
+        <h2 class="py-3">The films should tell a story or give a glimpse into
           your life.</h2>
         <p class="pt-3">You Could:</p>
         <ul class="film-list py-4">
@@ -112,40 +118,40 @@
     </section>
 
     <section id="inspiration" class="py-5 text-center">
-      <h2 class="py-4">Inspriation</h2>
+      <h2 class="py-4">Inspiration</h2>
       <p class="lead py-4">If you’re looking for some inspiration, have a look at these films:
       </p>
       <div class="container">
         <div class="row">
             <div class="col-lg-4">
-              <div class="box-grid">
+              <div data-aos="fade-right"  class="box-grid  my-2">
 
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="box-grid">
+              <div data-aos="fade-right"  class="box-grid my-2">
 
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="box-grid">
+              <div data-aos="fade-right"  class="box-grid my-2">
 
               </div>
             </div>
         </div>
-        <div class="row mt-5">
+        <div class="row">
           <div class="col-lg-4">
-            <div class="box-grid">
+            <div data-aos="fade-right"  class="box-grid my-2">
 
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="box-grid">
+            <div data-aos="fade-right"  class="box-grid my-2">
 
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="box-grid">
+            <div data-aos="fade-right"  class="box-grid my-2">
 
             </div>
           </div>
@@ -156,44 +162,47 @@
 
     <section id="deadline">
       <div class="deadline-content">
-        <h1>The Deadline is 31st January</h1>
+        <h2>The Deadline is 31st January</h2>
+        <h1 class="display-2 mt-2" id="time"></h1>
       </div>
     </section>
 
     <section id="jumbo" class="my-5">
       <div class="jumbo-text">
-        <h3 class="p-5">Shortlisted films will feature in the WHA’GWAN FILM FESTIVAL in spring 2021, which will be taking place online and through live events (so long as lockdown allows us to do live events!).
+        <h3 data-aos="fade-right"  class="p-2">Shortlisted films will feature in the WHA’GWAN FILM FESTIVAL in spring 2021, which will be taking place online and through live events (so long as lockdown allows us to do live events!).
         </h3>
       </div>
     </section>
 
     <section id="tips" class="py-5 text-center">
-      <h2 class="py-4">Tips</h2>
+      <h2 class="p-4">Tips</h2>
       <p class="lead py-4">If you’re looking for some inspiration, have a look at these films:
       </p>
-      <div class="container">
+
+      <h1 data-aos="fade-right"  class="text-center py-5 display-4"> Coming Soon!</h1>
+      <!-- <div class="container">
         <div class="row">
             <div class="col-lg-4">
-              <div class="box-grid">
-
+              <div class="card my-2">
+                <h1 class="text-dark">boo</h1>
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="box-grid">
-
+              <div class="card my-2">
+                boo
               </div>
             </div>
             <div class="col-lg-4">
-              <div class="box-grid">
-
+              <div class="card my-2">
+                boo
               </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <section id="contact" class="my-5">
       
-      <form action="POST" id="form">
+      <form data-aos="fade-right" action="POST" id="form">
         <h3 class="text-center">Get In Touch</h3>
         <!-- <hr class="my-3"> -->
         <input type="text" placeholder="Name" id="name">
@@ -203,25 +212,27 @@
         <input type="Submit" class="button" name="btn">
       </form>
 
-      <div class="contact-text">
-        <p class="lead">Got a question? Hit up Mel@ape-media.com and she’ll help. Got a film to submit? Send it to Connor@ape-media.com</p>
+      <div data-aos="fade-left"  class="contact-text my-4 m-4">
+        <h3>Got a question?</h3> 
+        <p>Hit up melissa@ape-media.com and she’ll help.</p> 
+        <p>Got a film to submit? Send it to connor@ape-media.com</p>
         <p>THE DEADLINE IS 31ST JANUARY 2021.</p>
       </div>
     </section>
 
     <footer class="mt-5">
         <div class="footer-top">
-          <div class="footer-logo mt-3">
+          <div class="footer-logo mt-4 m-2">
           <img src="./img/wagwanlogo.png" width="80px" height="" alt="">
         </div>
         <div>
-          <ul class="footer-nav my-3">
+          <ul class="footer-nav my-4 m-3">
             <li class="nav-item">
               <a href="" class="nav-link">Home</a>
             </li>
-            .
+            
             <li class="nav-item"><a href="" class="nav-link">Inspiration</a></li>
-            .
+            
             <li class="nav-item"><a href="" class="nav-link">Tips</a></li>
           </ul>
         </div>
@@ -230,19 +241,19 @@
         <div class="footer-bottom mt-3">
           <img src="./img/apemedia.png" width="100px" alt="">
 
-        <p>Whagwan &copy; 2020</p>
+        <p>Whagwan &copy; <span id="year"> <span></p>
         <div class="socials">
-					<ul class="social-list" data-aos="fade-left">
+					<ul class="social-list">
 						
 						<li>
 							<a target="_blank" href="https://github.com/chrisjharvey">
-								<i class="fab fa-github"></i>
+								<i class="fab fa-instagram"></i>
 							</a>
 						</li>
 						
 						<li>
-							<a target="_blank" href="https://www.linkedin.com/in/chris-harvey-47820b166/">
-								<i class="fab fa-linkedin"></i>
+							<a target="_blank" href="">
+								<i class="fab fa-twitter"></i>
 							</a>
 						</li>
 					</ul>
@@ -252,6 +263,7 @@
         
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous">
