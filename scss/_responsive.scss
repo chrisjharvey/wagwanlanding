@@ -1,4 +1,7 @@
 @media screen and (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
   .navbar-brand img {
     width: 60px;
     height: 70px;
@@ -125,6 +128,8 @@
   .contact-text  {
     text-align: center;
   }
+
+  
 
 }
 
