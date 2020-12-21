@@ -3,12 +3,14 @@
     overflow-x: hidden;
   }
 
+
   .navbar-brand img {
     width: 60px;
     height: 70px;
   }
 
   #home {
+    overflow-x: hidden;
     background: url(../img/hero-img.jpg) no-repeat right center/cover;
 
     .hero-text h1 {

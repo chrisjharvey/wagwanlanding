@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 html {
@@ -12,7 +18,6 @@ body {
   background: $primary;
   font-family: $font;
   color: $text-color;
-  overflow-x: hidden;
 }
 
 h1,
