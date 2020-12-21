@@ -118,7 +118,7 @@ h1,h2,h3 {
 
   .film-desc-img {
     width: 50%;
-    height: 900px;
+    height: 920px;
     background: url(../img/film-desc.jpg) no-repeat center center/cover;
     
   }
@@ -219,9 +219,10 @@ h1,h2,h3 {
   .screen {
     width: 90%;
     outline: none;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
     border-radius: 10px;
     background: $primary;
+    border: none;
   }
   p {
     max-width: 500px;
