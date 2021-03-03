@@ -75,43 +75,14 @@ h3 {
   }
 }
 
-#intro,
-#jumbo {
+#intro {
   text-align: center;
 
-  .intro-text,
-  .jumbo-text {
-    padding: 100px 0;
+  .intro-text {
+   padding: 100px 0;
   }
 }
 
-#intro-1 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  background: $secondary;
-
-  .intro1-text p {
-    font-size: 1.8rem;
-    line-height: 2;
-  }
-}
-
-#intro-2 {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-
-  .intro2-text p {
-    font-size: 1.8rem;
-    line-height: 2;
-    max-width: 600px;
-  }
-}
 
 #film-desc {
   display: flex;
@@ -121,9 +92,6 @@ h3 {
     width: 50%;
   }
 
-  // .film-desc-content {
-  //   max-height: 900px;
-  // }
 
   .film-desc-img {
     width: 50%;
